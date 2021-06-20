@@ -19,10 +19,13 @@ if ($status == false) {
     $error = $stmt->errorInfo();
   exit("ErrorQuery:".$error[2]);
 }else{
-    while($stmt ->fetch(PDO::FETCH_ASSOC)){
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);    
+    // while($stmt ->fetch(PDO::FETCH_ASSOC)){
+    // $result = $stmt->fetchAll();(PDO::FETCH_ASSOC);    
+    // $json = json_encode($result);
+    // }
+    $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
     $json = json_encode($result);
-    }
+
 };
 
 
