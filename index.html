@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>データ登録
+    </title>
+</head>
+<body>
+    
+<h1>B級映画リスト</h1>
+
+<form action="insert.php", method="post">
+    <label for="name">作品名: <input type="text" name="name"></label><br>
+    <label for="url">URL: <input type="text" name="url"></label><br>
+    <label for="review">評価: <input type="number" name="review"></label><br>
+    コメント: <br>
+    <label for="comment"><textarea name="comment" id="comment" cols="30" rows="10"></textarea></label><br>
+
+
+    <input type="submit" value="登録">
+
+</form>
+
+
+
+</body>
+</html>
